@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/holder_bg"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/file_name_bg"
+            android:padding="10dp">
+            <TextView
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/file_name_bg"
+                android:text="How to plant a tree in the dry conditions.pptx"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:id="@+id/fileName"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/download_24"
+                android:id="@+id/downloadFileBtn"
+                android:contentDescription="To download the file" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By Michael Mboya on how To plant tree in dry conditions"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:layout_below="@id/fileName"
+                android:layout_marginTop="10dp"
+                android:id="@+id/byWho"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/file_name_bg"
+                android:text="On Tues 10 Aug 2003"
+                android:textSize="12sp"
+                android:layout_below="@id/byWho"
+                android:padding="5dp"
+                android:textColor="#9C08041E"
+                android:textStyle="bold|italic"
+                android:id="@+id/postedTime"/>
+
+            <TextView
+                android:id="@+id/fileSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/byWho"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="13sp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/file_name_bg"
+                android:text="55.6 Mbs"
+                android:padding="5dp"
+                android:textColor="#9C08041E"
+                android:textStyle="bold|italic" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wh_bg"
+    android:id="@+id/mainLayout"
+    tools:context=".AdminUsersActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/nav_bott_bg"
+        android:padding="10dp"
+        android:id="@+id/header_nav">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:text="Future Guardians Admin" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/search_tab">
+            <EditText
+                android:layout_width="250dp"
+                android:hint="Search User"
+                android:textColor="@color/white"
+                android:textColorHint="#EFEAEA"
+                android:inputType="text"
+                android:autofillHints="name"
+                android:background="@drawable/search_bg"
+                android:layout_height="40dp"
+                android:paddingStart="10dp"/>
+            <ImageButton
+                android:layout_width="40dp"
+                android:background="@drawable/search_bt_bg"
+                android:layout_height="40dp"
+                android:src="@drawable/search_24"
+                android:id="@+id/search_btn"/>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycle"
+        android:layout_below="@id/header_nav"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
