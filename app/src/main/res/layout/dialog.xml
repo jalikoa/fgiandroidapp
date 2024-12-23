@@ -9,7 +9,7 @@
     app:cardCornerRadius="14dp">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:background="@drawable/wh_bg"
+        android:background="#1B62F307"
         android:layout_height="match_parent">
 
         <TextView

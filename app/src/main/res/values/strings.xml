@@ -86,4 +86,7 @@
     <string name="_5_years_ago">5 years ago</string>
     <string name="how_to_plant_a_tree">How to plant a tree…</string>
     <string name="profile">Profile</string>
+    <string name="call_text">Our planet is facing unprecedented environmental challenges. Climate change, pollution, and biodiversity loss threaten the health of our planet and future generations. But there is hope. By making conscious choices and taking collective action, we can create a more sustainable future.</string>
+    <string name="copy_jalsoft">\@Jalsoft</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>

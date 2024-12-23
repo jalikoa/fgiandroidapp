@@ -33,6 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/header_title"
         android:id="@+id/scrollable"
+        android:background="#1B62F307"
         android:layout_marginTop="10dp">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -41,44 +42,9 @@
             android:padding="10dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:id="@+id/searchTab"
-                android:orientation="vertical"
-                android:layout_height="60dp"
-                android:layout_marginBottom="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:id="@+id/searchCont"
-                    android:orientation="horizontal"
-                    android:background="@drawable/inp_bg"
-                    android:padding="5dp"
-                    android:layout_height="match_parent"
-                    tools:ignore="UselessParent">
-                <EditText
-                    android:layout_width="300dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/inp_bg"
-                    android:id="@+id/searchInput"
-                    android:inputType="text"
-                    android:autofillHints="name"
-                    android:hint="@string/search_here"
-                    android:textColorHint="#D0033A11"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
-                    />
-                    <ImageButton
-                        android:layout_width="50dp"
-                        android:background="@drawable/inp_bg"
-                        android:layout_height="50dp"
-                        android:src="@drawable/location_on_24"
-                        android:id="@+id/searchButton"
-                        android:contentDescription="@string/app_name" />
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_below="@+id/searchTab"
+                android:layout_alignParentStart="true"
                 android:background="#1D8E8E8E"
                 android:id="@+id/body_head">
                 <ImageView
@@ -144,7 +110,7 @@
                         android:id="@+id/education"
                         android:backgroundTint="#FFFFFF"
                         android:layout_margin="5dp"
-                        app:cardElevation="10dp"
+                        app:cardElevation="2dp"
                         app:cardCornerRadius="20dp">
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -166,7 +132,7 @@
                                 android:textSize="20sp"
                                 tools:ignore="RelativeOverlap" />
                             <TextView
-                                android:textColor="#000000"
+                                android:textColor="#de000000"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/education_logo"
@@ -193,7 +159,7 @@
                         android:layout_weight="1"
                         android:backgroundTint="#ffffff"
                         android:layout_margin="5dp"
-                        app:cardElevation="10dp"
+                        app:cardElevation="2dp"
                         app:cardCornerRadius="20dp">
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -216,7 +182,7 @@
                                 android:textSize="20sp"
                                 tools:ignore="RelativeOverlap" />
                             <TextView
-                                android:textColor="#000000"
+                                android:textColor="#de000000"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/community_logo"
@@ -247,7 +213,7 @@
                         android:layout_weight="1"
                         android:id="@+id/support"
                         android:layout_margin="5dp"
-                        app:cardElevation="10dp"
+                        app:cardElevation="2dp"
                         android:backgroundTint="#ffffff"
                         app:cardCornerRadius="20dp">
                         <RelativeLayout
@@ -272,7 +238,7 @@
                                 android:textSize="20sp"
                                 tools:ignore="RelativeOverlap" />
                             <TextView
-                                android:textColor="#000000"
+                                android:textColor="#de000000"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/support_logo"
@@ -295,7 +261,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="200dp"
-                        app:cardElevation="10dp"
+                        app:cardElevation="2dp"
                         android:backgroundTint="#ffffff"
                         android:layout_margin="5dp"
                         app:cardCornerRadius="10dp">
@@ -320,7 +286,7 @@
                                 android:textSize="20sp"
                                 tools:ignore="RelativeOverlap" />
                             <TextView
-                                android:textColor="#000000"
+                                android:textColor="#de000000"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/carbon_logo"

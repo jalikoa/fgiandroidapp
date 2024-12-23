@@ -22,7 +22,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#36FFFFFF">
+        android:background="#1B62F307">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -80,10 +80,13 @@
                     android:background="@drawable/inp_bg"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/search_tab"
+                    app:tabTextColor="#de000000"
+                    app:tabSelectedTextColor="#0B6E00"
                     android:id="@+id/nav_tab">
                     <com.google.android.material.tabs.TabItem
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:tooltipText="@string/all"
                         android:text="@string/all"/>
                     <com.google.android.material.tabs.TabItem
                         android:layout_width="match_parent"

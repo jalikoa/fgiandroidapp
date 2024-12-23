@@ -28,7 +28,7 @@ public class AdminUsersActivity extends AppCompatActivity {
         UsersAdapter UsersAdapter = new UsersAdapter(this,list);
         recyclerView.setAdapter(UsersAdapter);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
         recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
         int j = 30;
         for (int i=0;i<j;i+=1) {

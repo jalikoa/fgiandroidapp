@@ -22,6 +22,7 @@
         <ScrollView
             android:id="@+id/scrollable"
             android:layout_width="match_parent"
+            android:background="#1B62F307"
             android:layout_height="match_parent">
 
             <LinearLayout
@@ -78,7 +79,7 @@
                             android:background="@drawable/inp_bg"
                             android:hint="First name"
                             android:inputType="textPersonName"
-                            android:textColor="#000"
+                            android:textColor="#de000000"
                             android:textColorHint="#8F263903" />
                     </TableRow>
 
@@ -106,7 +107,7 @@
                             android:background="@drawable/inp_bg"
                             android:hint="Last Name"
                             android:inputType="textPersonName"
-                            android:textColor="#000"
+                            android:textColor="#de000000"
                             android:textColorHint="#8F263903" />
                     </TableRow>
 
@@ -134,7 +135,7 @@
                             android:background="@drawable/inp_bg"
                             android:hint="Your phone"
                             android:inputType="phone"
-                            android:textColor="#000"
+                            android:textColor="#de000000"
                             android:textColorHint="#8F263903" />
                     </TableRow>
 
@@ -162,6 +163,7 @@
                             android:background="@drawable/inp_bg"
                             android:hint="About you (Bio)"
                             android:inputType="text"
+                            android:textColor="#de000000"
                             android:textColorHint="#8F263903" />
                     </TableRow>
 
@@ -189,7 +191,7 @@
                             android:background="@drawable/inp_bg"
                             android:hint="User name (Public)"
                             android:inputType="textPersonName"
-                            android:textColor="#000"
+                            android:textColor="#de000000"
                             android:textColorHint="#8F263903" />
                     </TableRow>
 
@@ -217,7 +219,7 @@
                             android:background="@drawable/inp_bg"
                             android:hint="Your country"
                             android:inputType="textEmailAddress"
-                            android:textColor="#000"
+                            android:textColor="#de000000"
                             android:textColorHint="#8F263903" />
                     </TableRow>
 
@@ -244,6 +246,8 @@
                             android:autofillHints="password"
                             android:background="@drawable/inp_bg"
                             android:hint="Set password"
+                            android:textColor="#de000000"
+                            android:textColorHint="#8F263903"
                             android:inputType="textPassword" />
                     </TableRow>
 
@@ -269,7 +273,9 @@
                             android:layout_weight="1"
                             android:autofillHints="password"
                             android:background="@drawable/inp_bg"
-                            android:hint="Confirm Password"
+                            android:hint="@string/confirm_password"
+                            android:textColor="#de000000"
+                            android:textColorHint="#8F263903"
                             android:inputType="textPassword" />
                     </TableRow>
                 </TableLayout>

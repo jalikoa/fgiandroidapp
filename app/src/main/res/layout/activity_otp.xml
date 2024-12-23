@@ -22,7 +22,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#36FFFFFF">
+        android:background="#1B62F307">
         <LinearLayout
             android:id="@+id/main_body"
             android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:text="An otp was sent to your email please check your inbox or spam folder in your email for the otp "
-                android:textColor="#011201"
+                android:textColor="#de000000"
                 android:textSize="15sp"
                 android:textStyle="normal" />
 
@@ -84,7 +84,7 @@
                         android:layout_weight="1"
                         android:autofillHints="password"
                         android:textColorHint="#8F263903"
-                        android:textColor="#000"
+                        android:textColor="#de000000"
                         android:background="@drawable/inp_bg"
                         android:hint="Please enter OTP here"
                         android:inputType="textPassword" />
@@ -125,6 +125,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/or"
                     android:textSize="16sp"
+                    android:textColor="#de000000"
                     android:layout_marginStart="30dp"
                     android:layout_gravity="end"
                     android:layout_marginEnd="5dp"/>

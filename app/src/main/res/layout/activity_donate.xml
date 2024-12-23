@@ -22,7 +22,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#36FFFFFF">
+        android:background="#1B62F307">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -56,8 +56,39 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/body"
                 android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchTab"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#1B62F307"
+                        android:src="@drawable/black_search_24"
+                        android:contentDescription="@string/app_name"
+                        android:id="@+id/searchBtn"/>
 
-
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="2"
+                        android:id="@+id/searchInput"
+                        android:textColor="#de000000"
+                        android:textColorHint="#8F263903"
+                        android:background="#1B62F307"
+                        android:hint="Search here"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:id="@+id/catHead"
+                    android:textColor="#de000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/searchTab"/>
             </RelativeLayout>
         </ScrollView>
         <LinearLayout
@@ -66,45 +97,17 @@
             android:layout_alignParentBottom="true"
             android:orientation="horizontal"
             android:id="@+id/navBar"
-            android:background="@drawable/footer_bg">
-            <RelativeLayout
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="#fff">
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingEnd="20dp"
-                android:paddingStart="20dp"
-                android:id="@+id/footer">
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/homeBtn"
-                    android:src="@drawable/home_true_24"
-                    android:layout_alignParentStart="true"
-                    android:backgroundTint="#9AFFFFFF"/>
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/reportsBtn"
-                    android:layout_toEndOf="@+id/homeBtn"
-                    android:src="@drawable/search_24"
-                    android:layout_marginStart="50dp"
-                    android:backgroundTint="#00FFFFFF"/>
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/findBtn"
-                    android:layout_toStartOf="@+id/learnBtn"
-                    android:src="@drawable/flag_24"
-                    android:layout_marginEnd="50dp"
-                    android:backgroundTint="#00FFFFFF"/>
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/learnBtn"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/menu_book_24"
-                    android:backgroundTint="#00FFFFFF"/>
-            </RelativeLayout>
+                android:text="Donate now"
+                android:id="@+id/donateNowBtn"
+                android:textColor="#ffffff"/>
         </LinearLayout>
     </RelativeLayout>
 

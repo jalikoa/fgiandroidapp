@@ -22,7 +22,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#36FFFFFF">
+        android:background="#1B62F307">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
