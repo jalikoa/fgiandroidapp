@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/wh_bg"
@@ -35,6 +34,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:id="@+id/home_logo"
+                android:contentDescription="@string/app_name"
                 android:src="@drawable/home_24"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -50,46 +50,129 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/header_title"
             android:id="@+id/scrollable"
+            android:layout_marginBottom="60dp"
             android:layout_marginTop="10dp">
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/body"
-                android:padding="10dp">
+                android:background="@drawable/landing_bg"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:gravity="center"
+                    android:id="@+id/header_info"
+                    android:background="@drawable/isolated_plant"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:text="@string/we_can_save"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:text="@string/the_future"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:text="@string/do_together"/>
+                </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/searchTab"
-                    android:orientation="horizontal">
-                    <ImageButton
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="#1B62F307"
-                        android:src="@drawable/black_search_24"
-                        android:contentDescription="@string/app_name"
-                        android:id="@+id/searchBtn"/>
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="40dp"
-                        android:layout_weight="2"
-                        android:id="@+id/searchInput"
+                    android:orientation="vertical"
+                    android:layout_below="@id/header_info"
+                    android:background="@drawable/ellipse_bg">
+                    <TextView
+                        android:layout_marginTop="55dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#8BC34A"
+                        android:text="@string/future_guardians"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#40403F"
+                        android:layout_margin="30dp"
+                        android:text="@string/text_donate"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/choose_amount"
                         android:textColor="#de000000"
-                        android:textColorHint="#8F263903"
-                        android:background="#1B62F307"
-                        android:hint="Search here"/>
-                </LinearLayout>
-                <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+                            <CheckBox android:textColor="#de000000" android:id="@+id/ten"/>
+                            <TextView android:text="@string/_10"
+                                android:textStyle="bold"
+                                android:textColor="#de000000"/>
+                        </TableRow>
+                        <TableRow>
+                            <CheckBox android:textColor="#de000000" android:id="@+id/twentyFive"/>
+                            <TextView android:text="@string/_25"
+                                android:textStyle="bold"
+                            android:textColor="#de000000"/>
+                        </TableRow>
+                        <TableRow>
+                            <CheckBox android:textColor="#de000000" android:id="@+id/fifty"/>
+                            <TextView android:text="@string/_50"
+                            android:textStyle="bold"
+                            android:textColor="#de000000"/>
+                         </TableRow>
+                    </TableLayout>
+
+                    <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Categories"
-                    android:id="@+id/catHead"
-                    android:textColor="#de000000"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    android:layout_below="@id/searchTab"/>
+                    android:text="@string/choose_donation"
+                    android:layout_marginStart="20dp"
+                        android:textColor="#de000000"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                                    <CheckBox
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:text="@string/monthly"
+                                        android:textColor="#de000000"
+                                        android:id="@+id/monthly"
+                                        android:textStyle="bold"
+                                        tools:ignore="TooDeepLayout"/>
+                                    <CheckBox
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="#de000000"
+                                        android:text="@string/one_time"
+                                        android:textStyle="bold"
+                                        android:id="@+id/onetime"/>
+                    </LinearLayout>
+                </LinearLayout>
             </RelativeLayout>
+
         </ScrollView>
         <LinearLayout
             android:layout_width="match_parent"
@@ -105,7 +188,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Donate now"
+                android:text="@string/donate_now"
                 android:id="@+id/donateNowBtn"
                 android:textColor="#ffffff"/>
         </LinearLayout>

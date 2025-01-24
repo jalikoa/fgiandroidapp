@@ -44,6 +44,4 @@ public class LearnActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }

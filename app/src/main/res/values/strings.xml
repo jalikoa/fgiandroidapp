@@ -89,4 +89,17 @@
     <string name="call_text">Our planet is facing unprecedented environmental challenges. Climate change, pollution, and biodiversity loss threaten the health of our planet and future generations. But there is hope. By making conscious choices and taking collective action, we can create a more sustainable future.</string>
     <string name="copy_jalsoft">\@Jalsoft</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="overview_text">Sustainable Solutions for a Greener Future Protect Our Planet, Together</string>
+    <string name="we_can_save">We Can Save</string>
+    <string name="the_future">The Future</string>
+    <string name="do_together">Let us do it together</string>
+    <string name="choose_donation">Choose Donation Frequency</string>
+    <string name="text_donate">Help us reach our goals and target By just a coin.Aything give is appreciated!</string>
+    <string name="monthly">Monthly</string>
+    <string name="one_time">One Time</string>
+    <string name="choose_amount">Choose Amount</string>
+    <string name="_50">$50</string>
+    <string name="_25">$25</string>
+    <string name="_10">$10</string>
+    <string name="donate_now">Donate now</string>
 </resources>

@@ -106,89 +106,12 @@
                         android:text="@string/discuss"/>
 
                 </com.google.android.material.tabs.TabLayout>
-    <ScrollView
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/scrollable"
-              android:layout_marginTop="110dp">
                 <androidx.viewpager2.widget.ViewPager2
+                    android:layout_below="@id/nav_tab"
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:id="@+id/view_pager"/>
-    </ScrollView>
     </RelativeLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal"
-            android:id="@+id/navBar"
-            android:background="@drawable/footer_bg">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingEnd="5dp"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:paddingStart="5dp"
-                android:id="@+id/footer">
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/homeBtn"
-                    android:src="@drawable/home_true_24"
-                    android:backgroundTint="#9AFFFFFF"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:paddingEnd="5dp"
-                android:orientation="vertical"
-                android:paddingStart="5dp"
-                android:id="@+id/footer2">
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/reportsBtn"
-                    android:src="@drawable/search_24"
-                    android:backgroundTint="#00FFFFFF"
-                    android:contentDescription="@string/app_name"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingEnd="5dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingStart="5dp"
-                android:id="@+id/footer1">
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/findBtn"
-                    android:src="@drawable/flag_24"
-                    android:backgroundTint="#00FFFFFF"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingEnd="5dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingStart="5dp"
-                android:id="@+id/footer3">
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/learnBtn"
-                    android:src="@drawable/menu_book_24"
-                    android:backgroundTint="#00FFFFFF"/>
-            </LinearLayout>
-        </LinearLayout>
     </RelativeLayout>
 </FrameLayout>

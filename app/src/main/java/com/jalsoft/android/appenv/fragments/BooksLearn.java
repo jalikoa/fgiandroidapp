@@ -1,6 +1,5 @@
 package com.jalsoft.android.appenv.fragments;
 
-import android.content.Context;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -11,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.jalsoft.android.appenv.R;
-import com.jalsoft.android.appenv.adapters.FileAdapter;
+import com.jalsoft.android.appenv.adapters.BooksAdapter;
 import com.jalsoft.android.appenv.models.FileModel;
 
 import java.util.ArrayList;
@@ -19,25 +18,20 @@ import java.util.List;
 
 public class BooksLearn extends Fragment {
     private RecyclerView recyclerView;
-    private FileAdapter fileAdapter;
+    private BooksAdapter booksAdapter;
     private List<FileModel> fileList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_books_learn, container, false);
-
         recyclerView = view.findViewById(R.id.books_recycle);
         fileList = new ArrayList<>();
-        fileAdapter = new FileAdapter(getContext(), fileList);
-
-        recyclerView.setAdapter(fileAdapter);
+        booksAdapter = new BooksAdapter(getContext(), fileList);
+        recyclerView.setAdapter(booksAdapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL));
-
-        // Preload data
         loadBooksData();
-
         return view;
     }
 
@@ -50,6 +44,6 @@ public class BooksLearn extends Fragment {
                     "30.34 MB"
             ));
         }
-        fileAdapter.notifyDataSetChanged();
+        booksAdapter.notifyDataSetChanged();
     }
 }

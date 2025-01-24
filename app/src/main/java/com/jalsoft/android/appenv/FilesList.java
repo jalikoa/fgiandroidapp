@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.RelativeLayout;
 
-import com.jalsoft.android.appenv.adapters.FileAdapter;
+import com.jalsoft.android.appenv.adapters.BooksAdapter;
 import com.jalsoft.android.appenv.models.FileModel;
 
 import java.util.ArrayList;
@@ -23,10 +23,10 @@ public class FilesList extends AppCompatActivity {
         setContentView(R.layout.activity_files_list);
         List<FileModel> fileList;
         fileList = new ArrayList<>();
-        FileAdapter fileAdapter = new FileAdapter(this,fileList);
+        BooksAdapter booksAdapter = new BooksAdapter(this,fileList);
         recyclerView = findViewById(R.id.recycle);
         relativeLayout = findViewById(R.id.mainLayout);
-        recyclerView.setAdapter(fileAdapter);
+        recyclerView.setAdapter(booksAdapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
